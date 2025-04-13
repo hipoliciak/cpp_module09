@@ -6,7 +6,7 @@
 #    By: dmodrzej <dmodrzej@student.42warsaw.pl>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/07 21:56:39 by dmodrzej          #+#    #+#              #
-#    Updated: 2025/04/07 22:00:29 by dmodrzej         ###   ########.fr        #
+#    Updated: 2025/04/13 20:04:18 by dmodrzej         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,4 +32,12 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+test:
+	./$(name) "8 9 * 9 - 9 - 9 - 4 - 1 +"
+	./$(name) "7 7 * 7 -"
+	./$(name) "1 2 * 2 / 2 * 2 4 - +"
+	./$(name) "1 2 + 3 * 9 4 / +"
+#	./$(name) "1 0 / 0 *"
+#	./$(name) "(1 + 1)"
+
+.PHONY: all clean fclean re test

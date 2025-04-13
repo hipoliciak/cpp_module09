@@ -6,7 +6,7 @@
 /*   By: dmodrzej <dmodrzej@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 21:57:35 by dmodrzej          #+#    #+#             */
-/*   Updated: 2025/04/07 23:40:16 by dmodrzej         ###   ########.fr       */
+/*   Updated: 2025/04/13 19:10:33 by dmodrzej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ BitcoinExchange::BitcoinExchange(const BitcoinExchange &other)
 	*this = other;
 }
 
-BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange &other)
+BitcoinExchange &BitcoinExchange::operator=(const BitcoinExchange &other)
 {
     if (this != &other)
         this->rates = other.rates;

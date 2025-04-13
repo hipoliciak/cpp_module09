@@ -6,7 +6,7 @@
 /*   By: dmodrzej <dmodrzej@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 21:57:31 by dmodrzej          #+#    #+#             */
-/*   Updated: 2025/04/07 23:09:28 by dmodrzej         ###   ########.fr       */
+/*   Updated: 2025/04/13 19:10:17 by dmodrzej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class BitcoinExchange
 		BitcoinExchange();
 		BitcoinExchange(const std::string &inputFile);
 		BitcoinExchange(const BitcoinExchange &other);
-		BitcoinExchange& operator=(const BitcoinExchange &other);
+		BitcoinExchange &operator=(const BitcoinExchange &other);
 		~BitcoinExchange();
 
 		double getExchangeRate(const std::string &date) const;

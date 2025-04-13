@@ -6,7 +6,7 @@
 #    By: dmodrzej <dmodrzej@student.42warsaw.pl>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/07 21:56:39 by dmodrzej          #+#    #+#              #
-#    Updated: 2025/04/07 22:01:29 by dmodrzej         ###   ########.fr        #
+#    Updated: 2025/04/13 20:16:51 by dmodrzej         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,4 +32,13 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+test:
+	./$(name) 3 5 9 7 4
+	./$(name) `shuf -i 1-100 -n 10 | tr "\n" " "`
+	./$(name) `shuf -i 1-1000 -n 30 | tr "\n" " "`
+#	./$(name) `shuf -i 1-100000 -n 3000 | tr "\n" " "`
+#	./$(name) 1 test
+#	./$(name) 2147483648 3
+#	./$(name) "-1" "2"
+
+.PHONY: all clean fclean re test
