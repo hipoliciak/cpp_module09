@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dmodrzej <dmodrzej@student.42warsaw.pl>    +#+  +:+       +#+         #
+#    By: dmodrzej <dmodrzej@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/07 21:56:39 by dmodrzej          #+#    #+#              #
-#    Updated: 2025/04/13 20:04:18 by dmodrzej         ###   ########.fr        #
+#    Updated: 2025/05/02 17:09:54 by dmodrzej         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,5 +39,6 @@ test:
 	./$(name) "1 2 + 3 * 9 4 / +"
 #	./$(name) "1 0 / 0 *"
 #	./$(name) "(1 + 1)"
+#	./$(name) "10 2 +"
 
 .PHONY: all clean fclean re test

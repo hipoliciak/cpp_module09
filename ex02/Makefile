@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dmodrzej <dmodrzej@student.42warsaw.pl>    +#+  +:+       +#+         #
+#    By: dmodrzej <dmodrzej@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/07 21:56:39 by dmodrzej          #+#    #+#              #
-#    Updated: 2025/04/13 20:19:42 by dmodrzej         ###   ########.fr        #
+#    Updated: 2025/05/02 17:26:36 by dmodrzej         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

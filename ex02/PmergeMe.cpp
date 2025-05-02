@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PmergeMe.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmodrzej <dmodrzej@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: dmodrzej <dmodrzej@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 22:01:46 by dmodrzej          #+#    #+#             */
-/*   Updated: 2025/04/13 20:12:10 by dmodrzej         ###   ########.fr       */
+/*   Updated: 2025/05/02 17:24:49 by dmodrzej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,12 +47,12 @@ void PmergeMe::run(int argc, char** argv)
     printSequence("After:  ", _vec);
     std::cout << "Time to process a range of " << _vec.size()
               << " elements with std::vector: "
-              << static_cast<double>(endVec - startVec) / CLOCKS_PER_SEC * 1000000
+        	  << static_cast<double>(endVec - startVec) / CLOCKS_PER_SEC * 100
               << " us" << std::endl;
 
     std::cout << "Time to process a range of " << _deq.size()
               << " elements with std::deque: "
-              << static_cast<double>(endDeq - startDeq) / CLOCKS_PER_SEC * 1000000
+              << static_cast<double>(endDeq - startDeq) / CLOCKS_PER_SEC * 100
               << " us" << std::endl;
 }
 

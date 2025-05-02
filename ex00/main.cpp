@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmodrzej <dmodrzej@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*   By: dmodrzej <dmodrzej@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 21:57:09 by dmodrzej          #+#    #+#             */
-/*   Updated: 2025/04/07 23:33:29 by dmodrzej         ###   ########.fr       */
+/*   Updated: 2025/05/02 17:05:57 by dmodrzej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,14 @@ int main(int argc, char **argv)
     }
 
     std::string line;
-    std::getline(input, line);
+	if (std::getline(input, line))
+	{
+		if (line != "date | value")
+		{
+			std::cerr << "Error: invalid header => " << line << std::endl;
+			return 1;
+		}
+	}
 
     while (std::getline(input, line))
     {
